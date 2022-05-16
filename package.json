@@ -4,7 +4,7 @@
   "homepage": "https://r2am9d.github.io/portfolio",
   "description": "Personal portfolio",
   "scripts": {
-    "watch": "dead-server --port=1337 --watch=src/ --wait=300",
+    "watch": "node ./dead-server.js",
     "deploy": "gh-pages -d src"
   },
   "author": "Ram Delatina",
