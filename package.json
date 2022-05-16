@@ -4,8 +4,8 @@
   "homepage": "https://r2am9d.github.io/portfolio",
   "description": "Personal portfolio",
   "scripts": {
-    "watch": "dead-server --port=1337 --watch=index.html,assets/ --wait=300",
-    "deploy": "gh-pages -d build"
+    "watch": "dead-server --port=1337 --watch=src/ --wait=300",
+    "deploy": "gh-pages -d src"
   },
   "author": "Ram Delatina",
   "license": "ISC",
