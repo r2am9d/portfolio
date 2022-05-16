@@ -1,0 +1,16 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "homepage": "https://r2am9d.github.io/portfolio",
+  "description": "Personal portfolio",
+  "scripts": {
+    "watch": "dead-server --port=1337 --watch=index.html,assets/ --wait=300",
+    "deploy": "gh-pages -d build"
+  },
+  "author": "Ram Delatina",
+  "license": "ISC",
+  "devDependencies": {
+    "dead-server": "^1.0.6",
+    "gh-pages": "^4.0.0"
+  }
+}
