@@ -936,6 +936,7 @@ main {
     border-radius: 16px;
     overflow: hidden;
     margin-bottom: 15px;
+    border: 1px solid var(--cv-black);
 }
 
 .project-img::before {
