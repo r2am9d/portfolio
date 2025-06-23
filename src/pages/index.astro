@@ -10,9 +10,11 @@ import Tail from "@/components/sections/Tail.astro";
 import KeyboardManager from "@/components/KeyboardManager.astro";
 import ThemeSwitch from "@/components/ThemeSwitch.astro";
 
-import CV, { basics } from "@cv";
+import * as CVData from "@cv";
 import Education from "@/components/sections/Education.astro";
 import Images from "@/components/sections/Images.astro";
+const CV = CVData;
+const { basics } = CVData;
 const { name, label } = basics;
 
 enum PageLayout {
@@ -31,7 +33,6 @@ enum PageLayout {
     >
       <Hero />
       <About />
-      <ThemeSwitch />
     </div>
     <div
       class="slide-enter-content space-y-12 md:col-span-4 print:col-span-1 print:grid print:grid-cols-4 print:gap-2 print:space-y-0"
@@ -40,10 +41,9 @@ enum PageLayout {
       {
         (CV?.pageLayout === PageLayout.TwoColumn || !CV?.pageLayout) && (
           <>
-            <Projects className="print:hidden" />
-            {CV?.images && <Images className="print:hidden" />}
             {CV?.education && <Education className="order-first" />}
             <Skills className="print:hidden" />
+            <Projects className="print:hidden" />
           </>
         )
       }
@@ -56,10 +56,9 @@ enum PageLayout {
         {CV?.pageLayout === PageLayout.SingleColumn && (
           <main class="relative grid max-w-[82rem] gap-12 p-8 max-sm:py-16 md:grid-cols-6 md:p-16 xl:gap-24 print:max-w-none print:grid-cols-1 print:gap-6">
             <div class="slide-enter-content space-y-6 md:col-span-6">
-              <Projects className="print:hidden" />
-              {CV?.images && <Images className="print:hidden" />}
               {CV?.education && <Education className="order-first" />}
               <Skills className="print:hidden" />
+              <Projects className="print:hidden" />
             </div>
           </main>
         )}
@@ -71,14 +70,11 @@ enum PageLayout {
               class="slide-enter-content scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 mx-auto md:col-span-6 md:overflow-x-auto md:overflow-y-auto print:max-w-none print:grid-cols-1 print:gap-6"
             >
               <div class="flex space-x-0 pb-4 max-md:gap-4 max-sm:flex-col max-sm:space-y-4 md:px-4">
-                <Projects className="flex-shrink-0 w-full print:hidden border-skin-hue md:border-solid md:border md:p-4" />
-                {CV?.images && (
-                  <Images className="flex-shrink-0 w-full print:hidden border-skin-hue md:border-solid md:border md:p-4" />
-                )}
                 {CV?.education && (
                   <Education className="flex-shrink-0 w-full md:w-1/3 print:order-first border-skin-hue md:border-solid md:border md:p-4" />
                 )}
                 <Skills className="flex-shrink-0 w-full md:w-1/3 print:hidden border-skin-hue md:border-solid md:border md:p-4" />
+                <Projects className="flex-shrink-0 w-full print:hidden border-skin-hue md:border-solid md:border md:p-4" />
               </div>
             </div>
           </main>
@@ -141,7 +137,7 @@ enum PageLayout {
     carousel.addEventListener("wheel", handleUserInteraction);
     carousel.addEventListener("touchstart", handleUserInteraction);
   } else {
-    console.log('Not in Scroll mode')
+    console.log("Not in Scroll mode");
   }
 </script>
 

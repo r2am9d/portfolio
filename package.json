@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "deploy:vercel": "vercel deploy",
-    "deploy:cloudflare": "astro build && wrangler pages deploy ./dist"
+    "deploy:cloudflare": "astro build && wrangler pages deploy ./dist",
+    "disable:toolbar": "astro preferences disable devToolbar"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
