@@ -383,7 +383,6 @@
   "projects": [
     {
       "name": "SM Malls Online",
-      "url": "https://play.google.com/store/apps/details?id=com.smsupermalls.smmallsonline",
       "isActive": true,
       "description": "A high-performance, cross-platform mobile application developed using Flutter and Dart, following Clean Architecture principles to ensure code scalability, modularity, and maintainability across Android and iOS platforms",
       "highlights": [
@@ -396,7 +395,19 @@
         "url": "",
         "dark": "",
         "position": ""
-      }
+      },
+      "type": [
+        {
+          "platform": "Android",
+          "icon": "mdi:google-play",
+          "url": "https://play.google.com/store/apps/details?id=com.smsupermalls.smmallsonline"
+        },
+        {
+          "platform": "iOS",
+          "icon": "ri:app-store-fill",
+          "url": "https://apps.apple.com/ph/app/sm-malls-online/id1524596778"
+        }
+      ]
     },
     {
       "name": "Asset Management System",
@@ -412,7 +423,13 @@
         "url": "",
         "dark": "",
         "position": ""
-      }
+      },
+      "type": [
+        {
+          "platform": "Web",
+          "icon": "mdi:web"
+        }
+      ]
     },
     {
       "name": "DILG Messenger",
@@ -429,7 +446,13 @@
         "url": "",
         "dark": "",
         "position": ""
-      }
+      },
+      "type": [
+        {
+          "platform": "Web",
+          "icon": "mdi:web"
+        }
+      ]
     },
     {
       "name": "LGU Development Planning Profile",
@@ -446,7 +469,13 @@
         "url": "",
         "dark": "",
         "position": ""
-      }
+      },
+      "type": [
+        {
+          "platform": "Web",
+          "icon": "mdi:web"
+        }
+      ]
     },
     {
       "name": "Local Governance Performance Management System",
@@ -463,7 +492,13 @@
         "url": "",
         "dark": "",
         "position": ""
-      }
+      },
+      "type": [
+        {
+          "platform": "Web",
+          "icon": "mdi:web"
+        }
+      ]
     }
   ]
 }

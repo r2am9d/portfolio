@@ -1,7 +1,7 @@
 ---
 import ArtPlums from "@/components/ArtPlums.astro";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
-import '../globals.css'
+import "../globals.css";
 import CV from "@cv";
 
 interface Props {
@@ -26,14 +26,14 @@ const { image, summary, url, theme } = CV.basics;
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={summary} />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="/og-image.png" />
     <meta name="referrer" content="no-referrer" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content={url.split("//")[1] ?? ""} />
     <meta property="twitter:url" content={url} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={summary} />
-    <meta name="twitter:image" content="" />
+    <meta name="twitter:image" content="/og-image.png" />
     {CV?.analyticsCode && <script is:inline src={CV.analyticsCode} />}
   </head>
   <body data-theme={theme} class="relative bg-skin-fill font-sans">
@@ -72,7 +72,7 @@ const { image, summary, url, theme } = CV.basics;
       h2,
       h3,
       h4 {
-        @apply text-skin-base font-sans;
+        @apply font-sans text-skin-base;
         margin: 0;
       }
 

@@ -10,7 +10,16 @@ import { Image } from "astro:assets";
   <div class="grid grid-cols-1 gap-3 md:grid-cols-2 print:flex print:flex-col">
     {
       projects.map(
-        ({ url, description, highlights, name, isActive, github, image }) => {
+        ({
+          url,
+          description,
+          highlights,
+          name,
+          isActive,
+          github,
+          image,
+          type,
+        }) => {
           const isBackgroundImage = image && image?.position === "background";
           const isContainerImage = image && image?.position === "container";
           return (
@@ -44,17 +53,12 @@ import { Image } from "astro:assets";
                   <Icon name="mdi:folder-outline" class="size-4" />
                   <div class="flex items-center gap-[6px]">
                     {isActive ? (
-                      <a
-                        class="group flex items-center gap-[6px] text-lg decoration-dotted underline-offset-[5px] hover:text-skin-hue hover:underline"
-                        href={url}
-                        title={`${name}`}
-                        target="_blank"
-                      >
+                      <span class="group flex items-center gap-[6px] text-lg">
                         {name}
                         <span class="text-skin-hue transition ease-linear group-hover:-translate-y-0.5 group-hover:translate-x-0.5">
                           <Icon name="ri:arrow-up-line" class="rotate-45" />
                         </span>
-                      </a>
+                      </span>
                     ) : (
                       <span>{name}</span>
                     )}
@@ -72,6 +76,25 @@ import { Image } from "astro:assets";
                     <Icon name="mdi:github" width={24} height={24} />
                   </a>
                 )}
+              </div>
+
+              <div class="mt-2 flex gap-2">
+                {type &&
+                  type.map((t) => {
+                    return "url" in t && t.url ? (
+                      <a href={t.url} target="_blank" rel="noopener">
+                        <li class="flex items-center gap-1 rounded-md border border-solid border-skin-hue/0 bg-skin-button-accent/0 px-1 py-0.5 text-xs text-skin-hue hover:border-skin-hue/20 hover:bg-skin-button-accent/20 print:border-none print:bg-transparent print:p-0 print:text-zinc-800">
+                          <Icon name={t.icon} width={14} height={14} />
+                          <span>{t.platform}</span>
+                        </li>
+                      </a>
+                    ) : (
+                      <li class="flex items-center gap-1 rounded-md border border-solid border-skin-hue/0 bg-skin-button-accent/0 px-1 py-0.5 text-xs text-skin-hue print:border-none print:bg-transparent print:p-0 print:text-zinc-800">
+                        <Icon name={t.icon} width={14} height={14} />
+                        <span>{t.platform}</span>
+                      </li>
+                    );
+                  })}
               </div>
 
               <p class={`relative z-10 py-3 text-sm text-skin-base`}>
