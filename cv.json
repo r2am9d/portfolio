@@ -63,14 +63,8 @@
       "url": "https://www.smsupermalls.com",
       "startDate": "2022",
       "endDate": null,
-      "summary": "Developed and maintained high-performance cross-platform mobile application using Flutter/Dart",
-      "responsibilities": [
-        "Develops apps for SM Supermalls - Digital Commerce Division's software products and initiatives",
-        "Works with team members in building stong and scaleable software capabilities",
-        "Performs unit and functionality testing of product team's work",
-        "Collaborates, works efficiently and geek-play with the team",
-        "Works with the UX Designer to build the best experience"
-      ],
+      "summary": "Developed and maintained high-performance cross-platform mobile application using Flutter/Dart.",
+      "responsibilities": [],
       "skills": {
         "Flutter": "simple-icons:flutter",
         "Dart": "simple-icons:dart",
@@ -95,14 +89,8 @@
       "url": "https://www.dilg.gov.ph",
       "startDate": "2017",
       "endDate": "2021",
-      "summary": "Developed and deployed multiple full-stack web application projects using PHP utilizing Yii 2 framework",
-      "responsibilities": [
-        "Develop functional and operational systems",
-        "Perform System Analysis and Design and generate all the required system documentations in accordance with the department's ISO standards",
-        "Develop the Database Design and Structure using MySQL",
-        "Carry out a sequence of application tests and resolve any encountered bugs or issues during the testing process",
-        "Provide weekly accomplishment report"
-      ],
+      "summary": "Developed and deployed multiple full-stack web application projects using PHP utilizing Yii 2 framework.",
+      "responsibilities": [],
       "skills": {
         "HTML": "simple-icons:html5",
         "CSS": "ri:css3-fill",
@@ -358,6 +346,16 @@
         "Scripting",
         "Automation"
       ]
+    },
+    {
+      "name": "Testing",
+      "icon": "mdi:flask",
+      "level": "Intermediate",
+      "keywords": [
+        "Unit Test",
+        "Widget Test",
+        "Integration Test"
+      ]
     }
   ],
   "languages": [
@@ -384,12 +382,8 @@
     {
       "name": "SM Malls Online",
       "isActive": true,
-      "description": "A high-performance, cross-platform mobile application developed using Flutter and Dart, following Clean Architecture principles to ensure code scalability, modularity, and maintainability across Android and iOS platforms",
-      "highlights": [
-        "Utilized Bloc and Riverpod for robust state management, enabling reactive UI updates and simplified business logic handling",
-        "Enhanced user engagement and retention by implementing MoEngage for personalized notifications and AppsFlyer for user attribution and in-app behavior analytics",
-        "Published and managed app releases through Google Play Store and Apple App Store, coordinating build/version control using Git and GitHub workflows"
-      ],
+      "description": "Mall-in-one shopping app for stress-free shopping anytime, anywhere.",
+      "highlights": [],
       "github": "",
       "image": {
         "url": "",
@@ -412,12 +406,8 @@
     {
       "name": "Asset Management System",
       "isActive": false,
-      "description": "A web-based application built with PHP/Yii2 that manages the tracking of equipment, items, and inventory across the procurement, issuance, and monitoring processes of daily business operations",
-      "highlights": [
-        "Designed to support operational efficiency in inventory management",
-        "Enables end-to-end item and stock tracking from procurement to issuance",
-        "Supported accountability by maintaining a detailed audit trail of item movements and usage history"
-      ],
+      "description": "A web-based app for tracking equipment, items, and inventory throughout procurement, issuance, and monitoring in daily operations.",
+      "highlights": [],
       "github": "",
       "image": {
         "url": "",
@@ -435,12 +425,8 @@
       "name": "DILG Messenger",
       "url": "",
       "isActive": false,
-      "description": "A web-based internal messaging system built with Node.js/Socket.IO and PHP/Yii2, designed to mimic Facebook Messenger functionality for government office communication",
-      "highlights": [
-        "Provided an internal alternative to third-party messaging apps, improving data control and privacy",
-        "Ensured secure communication with user authentication and encrypted data transmission",
-        "Integrated notification systems and chat history retrieval for better user experience"
-      ],
+      "description": "A web-based internal messaging system replicating Facebook Messenger functionality for government office communication.",
+      "highlights": [],
       "github": "",
       "image": {
         "url": "",
@@ -458,12 +444,8 @@
       "name": "LGU Development Planning Profile",
       "url": "",
       "isActive": false,
-      "description": "A planning and profiling tool for Local Government Units (LGUs) to encode and manage their Annual Investment Plan and Local Development Investment Program",
-      "highlights": [
-        "Led the development of a structured input system for capturing investment plans and funding allocations",
-        "Enabled LGUs to digitally manage long-term development plans with consistent data formats",
-        "Included features for plan versioning, validation, and submission workflows"
-      ],
+      "description": "A planning and profiling tool for LGUs to streamline and manage their development projects and resource allocation.",
+      "highlights": [],
       "github": "",
       "image": {
         "url": "",
@@ -481,12 +463,8 @@
       "name": "Local Governance Performance Management System",
       "url": "",
       "isActive": false,
-      "description": "An online national information system that captures and presents data on local government performance to aid in local and national policy-making",
-      "highlights": [
-        "Contributed to the design of performance indicators and data capture modules tailored to LGU operations",
-        "Developed backend services to process and validate large volumes of governance performance data",
-        "Created data dashboards to visualize KPIs across regions, allowing performance benchmarking"
-      ],
+      "description": "An online national information system that captures and presents local government performance data to support policy-making.",
+      "highlights": [],
       "github": "",
       "image": {
         "url": "",
