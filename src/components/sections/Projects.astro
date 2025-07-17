@@ -26,7 +26,8 @@ import { Image } from "astro:assets";
             <div
               role="contentinfo"
               class:list={[
-                "project-container grid-span-1 group relative flex flex-col overflow-hidden rounded-md bg-skin-button-muted/50 p-5 shadow-sm ring-1 ring-skin-muted",
+                "project-container grid-span-1 group relative flex flex-col overflow-hidden rounded-md bg-skin-button-muted/50 p-5 shadow-sm ring-1",
+                isActive ? "ring-skin-hue/20" : "ring-skin-muted",
               ]}
             >
               {isBackgroundImage && (
@@ -55,9 +56,6 @@ import { Image } from "astro:assets";
                     {isActive ? (
                       <span class="group flex items-center gap-[6px] text-lg">
                         {name}
-                        <span class="text-skin-hue transition ease-linear group-hover:-translate-y-0.5 group-hover:translate-x-0.5">
-                          <Icon name="ri:arrow-up-line" class="rotate-45" />
-                        </span>
                       </span>
                     ) : (
                       <span>{name}</span>

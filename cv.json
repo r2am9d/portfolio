@@ -57,7 +57,7 @@
   "work": [
     {
       "name": "Shopping Center Management Corporation",
-      "position": "Flutter Developer",
+      "position": "Mobile Engineer",
       "location_type": "Hybrid",
       "location": "Pasay City",
       "url": "https://www.smsupermalls.com",
@@ -83,13 +83,13 @@
     },
     {
       "name": "Department of Interior and Local Government",
-      "position": "Web Developer",
+      "position": "Backend Engineer",
       "location_type": "On site",
       "location": "Quezon City",
       "url": "https://www.dilg.gov.ph",
       "startDate": "2017",
       "endDate": "2021",
-      "summary": "Developed and deployed multiple full-stack web application projects using PHP utilizing Yii 2 framework.",
+      "summary": "Developed and deployed multiple full-stack web application projects using PHP utilizing Yii framework.",
       "responsibilities": [],
       "skills": {
         "HTML": "simple-icons:html5",
@@ -382,7 +382,7 @@
     {
       "name": "SM Malls Online",
       "isActive": true,
-      "description": "Mall-in-one shopping app for stress-free shopping anytime, anywhere.",
+      "description": "Mall-in-one shopping application for stress-free shopping anytime, anywhere.",
       "highlights": [],
       "github": "",
       "image": {
