@@ -1,104 +1,110 @@
 ---
 import Section from "../Section.astro";
+import { Icon } from "astro-icon/components";
 
 import { education } from "@cv";
 import { certificates } from "@cv";
 ---
 
 <Section className={Astro.props.className} title="Education">
-  <ul class="space-y-4 py-3 print:space-y-0">
+  <div class="space-y-5 print:space-y-3">
     {
       education.map(({ institution, startDate, endDate, area, url }) => {
         const startYear = new Date(startDate).getFullYear();
         const endYear =
-          endDate != null ? new Date(endDate).getFullYear() : "Actual";
+          endDate != null ? new Date(endDate).getFullYear() : "Present";
         const years = `${startYear} - ${endYear}`;
 
         return (
-          <div class="flex items-baseline">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="mr-2 hidden h-5 w-5 self-start text-skin-hue/75 md:inline-block print:hidden"
-            >
-              <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
-              <path d="M22 10v6" />
-              <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
-            </svg>
-            <div class="relative w-full items-baseline justify-between gap-2">
-              <h3 class="mr-6 items-baseline gap-x-2 gap-y-0.5 font-medium">
-                <a
-                  target="_blank"
-                  class="group flex items-center gap-[6px] text-skin-base decoration-dotted underline-offset-[5px] hover:text-skin-hue hover:underline"
-                  href={url || null}
-                >
-                  {institution}
-                </a>
-              </h3>
-              <div class="text-sm text-skin-muted">{area}</div>
-              <time class="right-0 top-0 text-xs text-skin-muted md:absolute md:block">
-                {years}
-              </time>
+          <div class="group relative">
+            <div class="flex items-start gap-4">
+              <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-skin-hue/10 print:h-8 print:w-8">
+                <Icon
+                  name="mdi:school"
+                  class="h-5 w-5 text-skin-hue print:h-4 print:w-4"
+                />
+              </div>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-start justify-between gap-3">
+                  <div>
+                    <h3 class="text-base font-semibold text-skin-base print:text-sm">
+                      {url ? (
+                        <a
+                          href={url}
+                          target="_blank"
+                          class="transition-colors hover:text-skin-hue"
+                        >
+                          {institution}
+                        </a>
+                      ) : (
+                        institution
+                      )}
+                    </h3>
+                    <p class="mt-1 text-sm text-skin-muted print:text-xs">
+                      {area}
+                    </p>
+                  </div>
+                  <time class="font-mono text-sm text-skin-muted print:text-xs">
+                    {years}
+                  </time>
+                </div>
+              </div>
             </div>
           </div>
         );
       })
     }
-  </ul>
 
-  {
-    certificates.length > 0 && (
-      <>
-        <h4>Certificates</h4>
-        <ul class="space-y-4 py-3 print:space-y-0">
-          {certificates.map(({ name, date, issuer, url }) => {
-            const certificateYear = new Date(date).getFullYear();
-            return (
-              <div class="flex items-baseline">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="mr-2 hidden h-5 w-5 self-start text-skin-hue/75 md:inline-block print:hidden"
-                >
-                  <path d="M15 12h-5" />
-                  <path d="M15 8h-5" />
-                  <path d="M19 17V5a2 2 0 0 0-2-2H4" />
-                  <path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3" />
-                </svg>
-                <div class="relative w-full items-baseline justify-between gap-2">
-                  <h3 class="mr-6 items-baseline gap-x-2 gap-y-0.5 font-medium">
-                    <a
-                      class="group flex items-center gap-[6px] text-skin-base decoration-dotted underline-offset-[5px] hover:text-skin-hue hover:underline"
-                      href={url || null}
-                      target="_blank"
-                    >
-                      {name}
-                    </a>
-                  </h3>
-                  <div class="text-sm text-skin-muted">{issuer}</div>
-                  <time class="right-0 top-0 text-xs text-skin-muted md:absolute md:block">
-                    {certificateYear}
-                  </time>
+    {
+      certificates.length > 0 && (
+        <div class="mt-8 print:mt-5">
+          <h4 class="mb-4 text-base font-semibold text-skin-base print:mb-3 print:text-sm">
+            Certificates
+          </h4>
+          <div class="space-y-4 print:space-y-2">
+            {certificates.map(({ name, date, issuer, url }) => {
+              const certificateYear = new Date(date).getFullYear();
+              return (
+                <div class="group relative">
+                  <div class="flex items-start gap-4">
+                    <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-skin-hue/10 print:h-8 print:w-8">
+                      <Icon
+                        name="mdi:certificate"
+                        class="h-5 w-5 text-skin-hue print:h-4 print:w-4"
+                      />
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="flex items-start justify-between gap-3">
+                        <div>
+                          <h3 class="text-base font-semibold text-skin-base print:text-sm">
+                            {url ? (
+                              <a
+                                href={url}
+                                target="_blank"
+                                class="transition-colors hover:text-skin-hue"
+                              >
+                                {name}
+                              </a>
+                            ) : (
+                              name
+                            )}
+                          </h3>
+                          <p class="mt-1 text-sm text-skin-muted print:text-xs">
+                            {issuer}
+                          </p>
+                        </div>
+                        <time class="font-mono text-sm text-skin-muted print:text-xs">
+                          {certificateYear}
+                        </time>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
-        </ul>
-      </>
-    )
-  }
+              );
+            })}
+          </div>
+        </div>
+      )
+    }
+  </div>
 </Section>

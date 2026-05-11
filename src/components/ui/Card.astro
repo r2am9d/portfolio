@@ -1,0 +1,84 @@
+---
+export interface Props {
+  className?: string;
+  variant?: "default" | "gradient" | "outline" | "subtle";
+  padding?: "sm" | "md" | "lg";
+  rounded?: "sm" | "md" | "lg" | "xl";
+  hover?: boolean;
+}
+
+const {
+  className = "",
+  variant = "default",
+  padding = "md",
+  rounded = "lg",
+  hover = false,
+} = Astro.props;
+
+const paddingClasses = {
+  sm: "p-3",
+  md: "p-4",
+  lg: "p-6",
+};
+
+const roundedClasses = {
+  sm: "rounded",
+  md: "rounded-md",
+  lg: "rounded-lg",
+  xl: "rounded-xl",
+};
+---
+
+<div
+  class:list={[
+    "card",
+    `card-${variant}`,
+    paddingClasses[padding],
+    roundedClasses[rounded],
+    hover && "card-hover",
+    className,
+  ]}
+>
+  <slot />
+</div>
+
+<style>
+  .card {
+    @apply transition-all duration-300;
+  }
+
+  .card-default {
+    @apply border border-skin-muted bg-skin-fill;
+  }
+
+  .card-gradient {
+    background: linear-gradient(
+      135deg,
+      rgba(var(--color), 0.05),
+      rgba(var(--color), 0.1)
+    );
+    border: 1px solid rgba(var(--color), 0.15);
+  }
+
+  .card-outline {
+    @apply border border-skin-hue bg-transparent;
+  }
+
+  .card-subtle {
+    background-color: rgba(var(--color), 0.03);
+    border: 1px solid rgba(var(--color), 0.1);
+  }
+
+  .card-hover:hover {
+    @apply -translate-y-1 transform shadow-lg;
+    border-color: rgba(var(--color), 0.3);
+  }
+
+  .card-gradient.card-hover:hover {
+    background: linear-gradient(
+      135deg,
+      rgba(var(--color), 0.1),
+      rgba(var(--color), 0.15)
+    );
+  }
+</style>
