@@ -111,18 +111,21 @@
     {
       "name": "HTML",
       "icon": "simple-icons:html5",
+      "category": "Frontend",
       "level": "Intermediate",
       "keywords": ["Web Development", "Frontend"]
     },
     {
       "name": "CSS",
       "icon": "ri:css3-fill",
+      "category": "Frontend",
       "level": "Intermediate",
       "keywords": ["Web Development", "Frontend", "Responsive Design"]
     },
     {
       "name": "Tailwind",
       "icon": "mdi:tailwind",
+      "category": "Frontend",
       "level": "Intermediate",
       "keywords": [
         "Web Development",
@@ -134,12 +137,14 @@
     {
       "name": "JavaScript",
       "icon": "simple-icons:javascript",
+      "category": "Core",
       "level": "Expert",
       "keywords": ["Web Development", "Frontend", "Backend", "Fullstack"]
     },
     {
       "name": "TypeScript",
       "icon": "simple-icons:typescript",
+      "category": "Core",
       "level": "Expert",
       "keywords": [
         "Web Development",
@@ -151,24 +156,28 @@
     {
       "name": "PHP",
       "icon": "simple-icons:php",
+      "category": "Core",
       "level": "Expert",
       "keywords": ["Web Development", "Backend", "Fullstack"]
     },
     {
       "name": "Laravel",
       "icon": "simple-icons:laravel",
-      "level": "Expert",
+      "category": "Backend",
+      "level": "Intermediate",
       "keywords": ["Web Development", "Backend", "Fullstack"]
     },
     {
       "name": "Yii 2",
       "icon": "simple-icons:yii",
+      "category": "Backend",
       "level": "Expert",
       "keywords": ["Web Development", "Backend", "Fullstack"]
     },
     {
       "name": "Dart",
       "icon": "simple-icons:dart",
+      "category": "Core",
       "level": "Expert",
       "keywords": [
         "Mobile Development",
@@ -179,6 +188,7 @@
     {
       "name": "Flutter",
       "icon": "simple-icons:flutter",
+      "category": "Frontend",
       "level": "Intermediate",
       "keywords": [
         "Mobile Development",
@@ -189,84 +199,119 @@
     {
       "name": "Node",
       "icon": "ri:nodejs-line",
+      "category": "Backend",
       "level": "Intermediate",
       "keywords": ["Web Development", "Backend", "JavaScript", "Server"]
     },
     {
       "name": "MySQL",
       "icon": "simple-icons:mysql",
+      "category": "Backend",
       "level": "Intermediate",
       "keywords": ["Databases", "SQL", "Data Storage", "Backend"]
     },
     {
       "name": "PostgreSQL",
       "icon": "simple-icons:postgresql",
+      "category": "Backend",
       "level": "Intermediate",
       "keywords": ["Databases", "SQL", "Data Storage", "Backend"]
     },
     {
       "name": "MongoDB",
       "icon": "simple-icons:mongodb",
+      "category": "Backend",
       "level": "Intermediate",
       "keywords": ["Databases", "File", "Data Storage", "Backend"]
     },
     {
       "name": "GraphQL",
       "icon": "simple-icons:graphql",
+      "category": "Backend",
       "level": "Intermediate",
       "keywords": ["Databases", "File", "Data Storage", "Backend"]
     },
     {
       "name": "Git",
       "icon": "mdi:git",
+      "category": "Platform",
       "level": "Intermediate",
       "keywords": ["Version Control", "Collaboration", "Source Code"]
     },
     {
       "name": "GitHub",
       "icon": "mdi:github",
+      "category": "Platform",
       "level": "Expert",
       "keywords": ["Version Control", "Collaboration", "Source Code", "Git"]
     },
     {
       "name": "React",
       "icon": "mdi:react",
+      "category": "Frontend",
       "level": "Intermediate",
       "keywords": ["Web Development", "Frontend", "JavaScript Library", "UI"]
     },
     {
       "name": "Vue",
       "icon": "mdi:vuejs",
+      "category": "Frontend",
       "level": "Intermediate",
       "keywords": ["Web Development", "Frontend", "JavaScript Library", "UI"]
     },
     {
       "name": "Docker",
       "icon": "mdi:docker",
+      "category": "Platform",
       "level": "Intermediate",
       "keywords": ["Virtual Environments", "Backend"]
     },
     {
       "name": "Nginx",
       "icon": "simple-icons:nginx",
+      "category": "Backend",
       "level": "Intermediate",
       "keywords": ["Web Development", "Backend", "Web Server"]
     },
     {
       "name": "Apache",
       "icon": "simple-icons:apache",
+      "category": "Backend",
       "level": "Intermediate",
       "keywords": ["Web Development", "Backend", "Web Server"]
     },
     {
+      "name": "AWS",
+      "icon": "mdi:amazon",
+      "category": "Platform",
+      "level": "Intermediate",
+      "keywords": ["Cloud", "Infrastructure", "Scalability"]
+    },
+    {
+      "name": "Oracle Cloud",
+      "icon": "ri:cloud-fill",
+      "category": "Platform",
+      "level": "Intermediate",
+      "keywords": ["Cloud", "Infrastructure", "Scalability"]
+    },
+    {
       "name": "Linux",
       "icon": "simple-icons:linux",
+      "category": "Platform",
+      "level": "Intermediate",
+      "keywords": ["OS", "Scripting", "Automation"]
+    },
+    {
+      "name": "Mac",
+      "icon": "simple-icons:apple",
+      "category": "Platform",
       "level": "Intermediate",
       "keywords": ["OS", "Scripting", "Automation"]
     },
     {
       "name": "Testing",
       "icon": "mdi:flask",
+      "category": "Others",
       "level": "Intermediate",
       "keywords": ["Unit Test", "Widget Test", "Integration Test"]
     }
