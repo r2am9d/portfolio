@@ -15,6 +15,7 @@ export interface CV {
 
 interface Basics {
   name: string;
+  theme: string;
   label: string;
   image: string;
   email: string;
@@ -34,7 +35,7 @@ interface Location {
 }
 
 interface Profiles {
-  icon: string,
+  icon: string;
   network: string;
   username: string;
   url: string;
@@ -63,7 +64,7 @@ interface Volunteer {
 }
 
 interface Skills {
-  icon: string,
+  icon: string;
   name: string;
   level: string;
   keywords: Array<string>;

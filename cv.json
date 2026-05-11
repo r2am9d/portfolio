@@ -3,12 +3,12 @@
   "pageLayout": "two-column",
   "basics": {
     "name": "Remar Delatina",
-    "label": "Software Engineer | JS Enthusiast",
+    "label": "Software Engineer",
     "image": "/avatar.png",
     "email": "ram.delatina.29@gmail.com",
     "url": "",
     "summary": "Specializes in JavaScript, PHP, and Dart to deliver scalable and high-performance applications. From frontend to backend, I focus on optimizing user experience and performance while leveraging latest technologies.",
-    "theme": "orange",
+    "theme": "red",
     "location": {
       "city": "Quezon City",
       "address": "Manila",
@@ -57,13 +57,13 @@
   "work": [
     {
       "name": "Shopping Center Management Corporation",
-      "position": "Mobile Engineer",
+      "position": "Software Engineer",
       "location_type": "Hybrid",
       "location": "Pasay City",
       "url": "https://www.smsupermalls.com",
       "startDate": "2022",
-      "endDate": null,
-      "summary": "Developed and maintained high-performance cross-platform mobile application using Flutter/Dart.",
+      "endDate": "2026",
+      "summary": "Developed and maintained high-performance mobile application features using Flutter/Dart.",
       "responsibilities": [],
       "skills": {
         "Flutter": "simple-icons:flutter",
@@ -112,20 +112,13 @@
       "name": "HTML",
       "icon": "simple-icons:html5",
       "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend"
-      ]
+      "keywords": ["Web Development", "Frontend"]
     },
     {
       "name": "CSS",
       "icon": "ri:css3-fill",
       "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Responsive Design"
-      ]
+      "keywords": ["Web Development", "Frontend", "Responsive Design"]
     },
     {
       "name": "Tailwind",
@@ -142,12 +135,7 @@
       "name": "JavaScript",
       "icon": "simple-icons:javascript",
       "level": "Expert",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Backend",
-        "Fullstack"
-      ]
+      "keywords": ["Web Development", "Frontend", "Backend", "Fullstack"]
     },
     {
       "name": "TypeScript",
@@ -164,31 +152,19 @@
       "name": "PHP",
       "icon": "simple-icons:php",
       "level": "Expert",
-      "keywords": [
-        "Web Development",
-        "Backend",
-        "Fullstack"
-      ]
+      "keywords": ["Web Development", "Backend", "Fullstack"]
     },
     {
       "name": "Laravel",
       "icon": "simple-icons:laravel",
       "level": "Expert",
-      "keywords": [
-        "Web Development",
-        "Backend",
-        "Fullstack"
-      ]
+      "keywords": ["Web Development", "Backend", "Fullstack"]
     },
     {
       "name": "Yii 2",
       "icon": "simple-icons:yii",
       "level": "Expert",
-      "keywords": [
-        "Web Development",
-        "Backend",
-        "Fullstack"
-      ]
+      "keywords": ["Web Development", "Backend", "Fullstack"]
     },
     {
       "name": "Dart",
@@ -214,174 +190,91 @@
       "name": "Node",
       "icon": "ri:nodejs-line",
       "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Backend",
-        "JavaScript",
-        "Server"
-      ]
+      "keywords": ["Web Development", "Backend", "JavaScript", "Server"]
     },
     {
       "name": "MySQL",
       "icon": "simple-icons:mysql",
       "level": "Intermediate",
-      "keywords": [
-        "Databases",
-        "SQL",
-        "Data Storage",
-        "Backend"
-      ]
+      "keywords": ["Databases", "SQL", "Data Storage", "Backend"]
     },
     {
       "name": "PostgreSQL",
       "icon": "simple-icons:postgresql",
       "level": "Intermediate",
-      "keywords": [
-        "Databases",
-        "SQL",
-        "Data Storage",
-        "Backend"
-      ]
+      "keywords": ["Databases", "SQL", "Data Storage", "Backend"]
     },
     {
       "name": "MongoDB",
       "icon": "simple-icons:mongodb",
       "level": "Intermediate",
-      "keywords": [
-        "Databases",
-        "File",
-        "Data Storage",
-        "Backend"
-      ]
+      "keywords": ["Databases", "File", "Data Storage", "Backend"]
     },
     {
       "name": "GraphQL",
       "icon": "simple-icons:graphql",
       "level": "Intermediate",
-      "keywords": [
-        "Databases",
-        "File",
-        "Data Storage",
-        "Backend"
-      ]
+      "keywords": ["Databases", "File", "Data Storage", "Backend"]
     },
     {
       "name": "Git",
       "icon": "mdi:git",
       "level": "Intermediate",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code"
-      ]
+      "keywords": ["Version Control", "Collaboration", "Source Code"]
     },
     {
       "name": "GitHub",
       "icon": "mdi:github",
       "level": "Expert",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code",
-        "Git"
-      ]
+      "keywords": ["Version Control", "Collaboration", "Source Code", "Git"]
     },
     {
       "name": "React",
       "icon": "mdi:react",
       "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "JavaScript Library",
-        "UI"
-      ]
+      "keywords": ["Web Development", "Frontend", "JavaScript Library", "UI"]
     },
     {
       "name": "Vue",
       "icon": "mdi:vuejs",
       "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "JavaScript Library",
-        "UI"
-      ]
+      "keywords": ["Web Development", "Frontend", "JavaScript Library", "UI"]
     },
     {
       "name": "Docker",
       "icon": "mdi:docker",
       "level": "Intermediate",
-      "keywords": [
-        "Virtual Environments",
-        "Backend"
-      ]
+      "keywords": ["Virtual Environments", "Backend"]
     },
     {
       "name": "Nginx",
       "icon": "simple-icons:nginx",
       "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Backend",
-        "Web Server"
-      ]
+      "keywords": ["Web Development", "Backend", "Web Server"]
     },
     {
       "name": "Apache",
       "icon": "simple-icons:apache",
       "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Backend",
-        "Web Server"
-      ]
+      "keywords": ["Web Development", "Backend", "Web Server"]
     },
     {
       "name": "Linux",
       "icon": "simple-icons:linux",
       "level": "Intermediate",
-      "keywords": [
-        "OS",
-        "Scripting",
-        "Automation"
-      ]
+      "keywords": ["OS", "Scripting", "Automation"]
     },
     {
       "name": "Testing",
       "icon": "mdi:flask",
       "level": "Intermediate",
-      "keywords": [
-        "Unit Test",
-        "Widget Test",
-        "Integration Test"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "Tagalog",
-      "fluency": "Native speaker"
-    },
-    {
-      "language": "English",
-      "fluency": "Intermediate"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Technology",
-      "keywords": [
-        "AI",
-        "Blockchain"
-      ]
+      "keywords": ["Unit Test", "Widget Test", "Integration Test"]
     }
   ],
   "references": [],
   "projects": [
     {
       "name": "SM Malls Online",
-      "isActive": true,
       "description": "Mall-in-one shopping application for stress-free shopping anytime, anywhere.",
       "highlights": [],
       "github": "",
