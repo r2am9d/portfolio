@@ -242,7 +242,21 @@
       "name": "GitHub",
       "icon": "mdi:github",
       "category": "Platform",
-      "level": "Expert",
+      "level": "Intermediate",
+      "keywords": ["Version Control", "Collaboration", "Source Code", "Git"]
+    },
+    {
+      "name": "Gitlab",
+      "icon": "mdi:gitlab",
+      "category": "Platform",
+      "level": "Intermediate",
+      "keywords": ["Version Control", "Collaboration", "Source Code", "Git"]
+    },
+    {
+      "name": "GitHub Actions",
+      "icon": "simple-icons:githubactions",
+      "category": "Platform",
+      "level": "Intermediate",
       "keywords": ["Version Control", "Collaboration", "Source Code", "Git"]
     },
     {
@@ -267,17 +281,10 @@
       "keywords": ["Virtual Environments", "Backend"]
     },
     {
-      "name": "Nginx",
-      "icon": "simple-icons:nginx",
+      "name": "REST API",
+      "icon": "mdi:cog",
       "category": "Backend",
-      "level": "Intermediate",
-      "keywords": ["Web Development", "Backend", "Web Server"]
-    },
-    {
-      "name": "Apache",
-      "icon": "simple-icons:apache",
-      "category": "Backend",
-      "level": "Intermediate",
+      "level": "Expert",
       "keywords": ["Web Development", "Backend", "Web Server"]
     },
     {
@@ -314,6 +321,13 @@
       "category": "Others",
       "level": "Intermediate",
       "keywords": ["Unit Test", "Widget Test", "Integration Test"]
+    },
+    {
+      "name": "Socket.IO",
+      "icon": "simple-icons:socketdotio",
+      "category": "Others",
+      "level": "Intermediate",
+      "keywords": ["Real-time", "WebSockets", "Communication"]
     }
   ],
   "references": [],
